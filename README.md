@@ -1,4 +1,2 @@
 # dotfiles backup
-teste
-teste 2
-teste 3 
+backup of my personal linux configuration files
