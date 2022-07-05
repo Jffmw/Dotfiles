@@ -1,0 +1,64 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "cSpell.language": "en,pt-br",
+
+    // VScodevim configuration
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        // exit insert mode easily
+        "before": ["i", "i"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        // save with "space"+w
+        "before": ["<leader>", "w"],
+        "commands": [":w"]
+        },
+        {
+        // send text one line above
+        "before": ["<leader>", "k"],
+        "after": ["d","d","k","P"]
+        },
+        {
+        // send text one line below
+        "before": ["<leader>", "j"],
+        "after": ["d","d","p"]
+        },
+        {
+        // create newline with "enter"
+        "before": ["<CR>"],
+        "after": ["o","<esc>","k"]
+        },       
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    // end of vscodevim config
+
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "window.menuBarVisibility": "toggle",
+    "telemetry.telemetryLevel": "off",
+    "explorer.confirmDragAndDrop": false,
+    
+}
